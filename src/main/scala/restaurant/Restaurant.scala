@@ -4,6 +4,7 @@ import akka.actor.{Actor, Props}
 
 object Restaurant {
   def props(name: String) = Props(new Restaurant(name, 5))
+  def name() = "restaurant"
 
   case object BookAtRestaurant
 

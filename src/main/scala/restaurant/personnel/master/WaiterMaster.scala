@@ -3,9 +3,10 @@ package restaurant.personnel.master
 import akka.actor.{Actor, Props}
 
 object WaiterMaster {
-  def props() = Props(new WaiterMaster())
+  def props(numberOfWaiters: Int) = Props(new WaiterMaster(numberOfWaiters))
+  def name() = "waiterMaster"
 }
 
-class WaiterMaster extends Actor{
+class WaiterMaster(numberOfWaiters: Int) extends Actor{
   override def receive: Receive = ???
 }
