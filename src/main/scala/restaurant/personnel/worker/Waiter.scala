@@ -5,6 +5,7 @@ import restaurant.menu.Order
 
 object Waiter {
   def props(name: String) = Props(new Waiter(name))
+  def name() = "waiter"
 
   case object ReadyToOrder//client is ready
 
